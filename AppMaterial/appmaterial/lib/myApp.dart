@@ -2,6 +2,7 @@ import 'package:appmaterial/widgets/app_BottomNavigationBar.dart';
 import 'package:appmaterial/widgets/app_Drawer.dart';
 import 'package:appmaterial/widgets/app_EndDrawer.dart';
 import 'package:appmaterial/widgets/app_FloatingActionButton.dart';
+import 'package:appmaterial/widgets/app_appBar.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -11,14 +12,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
-        drawer: App_Drawer(),
-        endDrawer: App_EndDrawer(),
-        appBar: AppBar(),
-        bottomNavigationBar: App_BottomNavigationBar(),
-        floatingActionButton: App_FloatingActionButton(),
-        body: Text('Страница'),
+        drawer: const App_Drawer(),
+        endDrawer: const App_EndDrawer(),
+        appBar: app_AppBar(),
+        bottomNavigationBar: const App_BottomNavigationBar(),
+        floatingActionButton: const App_FloatingActionButton(),
+        body: const Text('Страница'),
       ),
     );
   }
