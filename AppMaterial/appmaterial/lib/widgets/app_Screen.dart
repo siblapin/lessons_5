@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:appmaterial/widgets/app_BottomNavigationBar.dart';
 
-import '../app_BottomNavigationBar.dart';
+import 'app_BottomNavigationBar.dart';
 
 var tabs = const [
   Center(child: Text('1 страница')),

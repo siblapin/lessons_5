@@ -8,16 +8,16 @@ class App_BottomNavigationBar extends StatefulWidget {
 
   @override
   State<App_BottomNavigationBar> createState() =>
-      _App_BottomNavigationBarState();
+      App_BottomNavigationBarState();
 }
 
-class _App_BottomNavigationBarState extends State<App_BottomNavigationBar> {
-  int _currentIndex = 0;
+class App_BottomNavigationBarState extends State<App_BottomNavigationBar> {
+  int currentIndex = 0;
   @override
   Widget build(BuildContext context) {
     return BottomAppBar(
       child: BottomNavigationBar(
-        currentIndex: _currentIndex,
+        currentIndex: currentIndex,
         items: const [
           BottomNavigationBarItem(label: 'Foto', icon: Icon(Icons.home)),
           BottomNavigationBarItem(label: 'Chat', icon: Icon(Icons.message)),
@@ -25,7 +25,7 @@ class _App_BottomNavigationBarState extends State<App_BottomNavigationBar> {
         ],
         onTap: (index) {
           setState(() {
-            _currentIndex = index;
+            currentIndex = index;
           });
         },
       ),
