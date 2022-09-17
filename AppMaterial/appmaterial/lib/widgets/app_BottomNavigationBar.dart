@@ -1,5 +1,6 @@
 //BottomNavigationBar
 import 'package:flutter/material.dart';
+import '../myApp.dart';
 
 class App_BottomNavigationBar extends StatefulWidget {
   const App_BottomNavigationBar({
@@ -13,6 +14,7 @@ class App_BottomNavigationBar extends StatefulWidget {
 
 class App_BottomNavigationBarState extends State<App_BottomNavigationBar> {
   int currentIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return BottomAppBar(
