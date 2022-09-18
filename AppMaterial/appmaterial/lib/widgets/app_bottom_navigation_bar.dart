@@ -1,11 +1,11 @@
 //BottomNavigationBar
 import 'package:flutter/material.dart';
-import '../myApp.dart';
+import '../my_app.dart';
 
 class App_BottomNavigationBar extends StatefulWidget {
-  const App_BottomNavigationBar({
-    Key? key,
-  }) : super(key: key);
+  final Function currentIndex1;
+  const App_BottomNavigationBar({Key? key, required this.currentIndex1})
+      : super(key: key);
 
   @override
   State<App_BottomNavigationBar> createState() =>
@@ -28,6 +28,7 @@ class App_BottomNavigationBarState extends State<App_BottomNavigationBar> {
         onTap: (index) {
           setState(() {
             currentIndex = index;
+            widget.currentIndex1(index);
           });
         },
       ),
